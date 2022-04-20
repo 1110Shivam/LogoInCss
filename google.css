@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.google{
+    position: relative;
+    border-top: 100px solid #ea4335;
+    border-right: 100px solid #4285f4;
+    border-bottom: 100px solid #34a853;
+    border-left: 100px solid #fbbc05;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+}
+.google::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -95px;
+    transform: translateY(-50%);
+    background: #4285f4;
+    width: 245px;
+    height: 100px;
+}
+.google::after{
+    content: '';
+    position: absolute;
+    border-top: 200px solid transparent;
+    border-right: 200px solid #fff;
+    top: -100px;
+    right: -100px;
+    height: 0;
+    width: 0;
+}
